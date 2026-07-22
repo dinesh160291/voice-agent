@@ -1,0 +1,1786 @@
+﻿{
+    "schemaVersion":  "1.0",
+    "traceId":  "85ce1bb33874424baf3539ebe52adc9b",
+    "sessionId":  "browser-d2e3b631-68ba-4cb0-982a-a743d02c1d6b",
+    "turnId":  "greeting",
+    "startedAt":  1784747164.7729394,
+    "totalMs":  1849.7,
+    "timings":  {
+                    "tts":  1848.7
+                },
+    "attributes":  {
+                       "action":  null,
+                       "sources":  [
+
+                                   ]
+                   },
+    "events":  [
+                   {
+                       "name":  "greeting.requested",
+                       "offsetMs":  0.0,
+                       "attributes":  {
+
+                                      }
+                   },
+                   {
+                       "name":  "tts.started",
+                       "offsetMs":  0.0,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini-tts",
+                                          "voice":  "alloy"
+                                      }
+                   },
+                   {
+                       "name":  "tts.completed",
+                       "offsetMs":  1848.8,
+                       "attributes":  {
+                                          "durationMs":  1848.7
+                                      }
+                   },
+                   {
+                       "name":  "turn.completed",
+                       "offsetMs":  1849.7,
+                       "attributes":  {
+
+                                      }
+                   }
+               ]
+}
+{
+    "schemaVersion":  "1.0",
+    "traceId":  "709a9df906584e4c8f4218daeb81e0f6",
+    "sessionId":  "browser-d2e3b631-68ba-4cb0-982a-a743d02c1d6b",
+    "turnId":  "turn-1",
+    "startedAt":  1784747178.6440904,
+    "totalMs":  7308.0,
+    "timings":  {
+                    "stt":  592.2,
+                    "routing":  0.0,
+                    "llm":  2311.2,
+                    "tools":  0.0,
+                    "tts":  4396.8
+                },
+    "attributes":  {
+                       "language":  "en",
+                       "locale":  "en-US",
+                       "provider":  "openai",
+                       "model":  "gpt-4o-mini",
+                       "action":  null,
+                       "sources":  [
+
+                                   ]
+                   },
+    "events":  [
+                   {
+                       "name":  "audio.received",
+                       "offsetMs":  0.0,
+                       "attributes":  {
+                                          "bytes":  98374,
+                                          "contentType":  "audio/webm;codecs=opus"
+                                      }
+                   },
+                   {
+                       "name":  "stt.started",
+                       "offsetMs":  0.0,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini-transcribe"
+                                      }
+                   },
+                   {
+                       "name":  "stt.completed",
+                       "offsetMs":  592.3,
+                       "attributes":  {
+                                          "durationMs":  592.2
+                                      }
+                   },
+                   {
+                       "name":  "routing.started",
+                       "offsetMs":  592.3,
+                       "attributes":  {
+
+                                      }
+                   },
+                   {
+                       "name":  "routing.completed",
+                       "offsetMs":  592.3,
+                       "attributes":  {
+                                          "durationMs":  0.0
+                                      }
+                   },
+                   {
+                       "name":  "router.selected",
+                       "offsetMs":  592.3,
+                       "attributes":  {
+                                          "language":  "en",
+                                          "locale":  "en-US",
+                                          "changed":  false,
+                                          "reason":  "session"
+                                      }
+                   },
+                   {
+                       "name":  "caller.transcript",
+                       "offsetMs":  592.3,
+                       "attributes":  {
+                                          "text":  "I need a room for two guests from August 6th to August 8th."
+                                      }
+                   },
+                   {
+                       "name":  "llm.started",
+                       "offsetMs":  594.0,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini"
+                                      }
+                   },
+                   {
+                       "name":  "llm.completed",
+                       "offsetMs":  1581.5,
+                       "attributes":  {
+                                          "durationMs":  987.5
+                                      }
+                   },
+                   {
+                       "name":  "tool.requested",
+                       "offsetMs":  1581.5,
+                       "attributes":  {
+                                          "tool":  "check_availability",
+                                          "arguments":  {
+                                                            "check_in":  "2024-08-06",
+                                                            "check_out":  "2024-08-08",
+                                                            "guests":  2
+                                                        }
+                                      }
+                   },
+                   {
+                       "name":  "tools.started",
+                       "offsetMs":  1581.6,
+                       "attributes":  {
+                                          "tool":  "check_availability"
+                                      }
+                   },
+                   {
+                       "name":  "tools.completed",
+                       "offsetMs":  1581.6,
+                       "attributes":  {
+                                          "durationMs":  0.0
+                                      }
+                   },
+                   {
+                       "name":  "tool.result",
+                       "offsetMs":  1581.6,
+                       "attributes":  {
+                                          "tool":  "check_availability",
+                                          "result":  "Available rooms for 2024-08-06 to 2024-08-08: Standard Queen at $189/night; Deluxe King at $229/night; Harbor Suite at $329/night; Family Double Queen at $269/night; Accessible Queen at $199/night.",
+                                          "sources":  [
+
+                                                      ],
+                                          "action":  null
+                                      }
+                   },
+                   {
+                       "name":  "llm.started",
+                       "offsetMs":  1581.6,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini"
+                                      }
+                   },
+                   {
+                       "name":  "llm.completed",
+                       "offsetMs":  2905.3,
+                       "attributes":  {
+                                          "durationMs":  1323.7
+                                      }
+                   },
+                   {
+                       "name":  "assistant.response",
+                       "offsetMs":  2905.3,
+                       "attributes":  {
+                                          "text":  "We have several room options available for your stay from August 6th to August 8th: a Standard Queen for $189 per night, a Deluxe King for $229 per night, a Harbor Suite for $329 per night, a Family Double Queen for $269 per night, and an Accessible Queen for $199 per night. Which one would you like to book?",
+                                          "action":  null
+                                      }
+                   },
+                   {
+                       "name":  "tts.started",
+                       "offsetMs":  2905.3,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini-tts",
+                                          "voice":  "alloy"
+                                      }
+                   },
+                   {
+                       "name":  "tts.completed",
+                       "offsetMs":  7302.1,
+                       "attributes":  {
+                                          "durationMs":  4396.8
+                                      }
+                   },
+                   {
+                       "name":  "turn.completed",
+                       "offsetMs":  7308.0,
+                       "attributes":  {
+
+                                      }
+                   }
+               ]
+}
+{
+    "schemaVersion":  "1.0",
+    "traceId":  "d5906d99639e40ff897f1b827fca00a0",
+    "sessionId":  "browser-d2e3b631-68ba-4cb0-982a-a743d02c1d6b",
+    "turnId":  "turn-2",
+    "startedAt":  1784747200.3370354,
+    "totalMs":  3132.9,
+    "timings":  {
+                    "stt":  558.0,
+                    "routing":  0.0,
+                    "llm":  824.4,
+                    "tts":  1748.3
+                },
+    "attributes":  {
+                       "language":  "en",
+                       "locale":  "en-US",
+                       "provider":  "openai",
+                       "model":  "gpt-4o-mini",
+                       "action":  null,
+                       "sources":  [
+
+                                   ]
+                   },
+    "events":  [
+                   {
+                       "name":  "audio.received",
+                       "offsetMs":  0.0,
+                       "attributes":  {
+                                          "bytes":  40006,
+                                          "contentType":  "audio/webm;codecs=opus"
+                                      }
+                   },
+                   {
+                       "name":  "barge_in.turn_started",
+                       "offsetMs":  0.1,
+                       "attributes":  {
+
+                                      }
+                   },
+                   {
+                       "name":  "stt.started",
+                       "offsetMs":  0.1,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini-transcribe"
+                                      }
+                   },
+                   {
+                       "name":  "stt.completed",
+                       "offsetMs":  558.1,
+                       "attributes":  {
+                                          "durationMs":  558.0
+                                      }
+                   },
+                   {
+                       "name":  "routing.started",
+                       "offsetMs":  558.1,
+                       "attributes":  {
+
+                                      }
+                   },
+                   {
+                       "name":  "routing.completed",
+                       "offsetMs":  558.1,
+                       "attributes":  {
+                                          "durationMs":  0.0
+                                      }
+                   },
+                   {
+                       "name":  "router.selected",
+                       "offsetMs":  558.1,
+                       "attributes":  {
+                                          "language":  "en",
+                                          "locale":  "en-US",
+                                          "changed":  false,
+                                          "reason":  "session"
+                                      }
+                   },
+                   {
+                       "name":  "caller.transcript",
+                       "offsetMs":  558.1,
+                       "attributes":  {
+                                          "text":  "Let\u0027s do a family double queen."
+                                      }
+                   },
+                   {
+                       "name":  "llm.started",
+                       "offsetMs":  559.3,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini"
+                                      }
+                   },
+                   {
+                       "name":  "llm.completed",
+                       "offsetMs":  1383.7,
+                       "attributes":  {
+                                          "durationMs":  824.4
+                                      }
+                   },
+                   {
+                       "name":  "assistant.response",
+                       "offsetMs":  1383.7,
+                       "attributes":  {
+                                          "text":  "Great choice! Can I have your name and a phone number or email for the booking?",
+                                          "action":  null
+                                      }
+                   },
+                   {
+                       "name":  "tts.started",
+                       "offsetMs":  1383.7,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini-tts",
+                                          "voice":  "alloy"
+                                      }
+                   },
+                   {
+                       "name":  "tts.completed",
+                       "offsetMs":  3132.0,
+                       "attributes":  {
+                                          "durationMs":  1748.3
+                                      }
+                   },
+                   {
+                       "name":  "turn.completed",
+                       "offsetMs":  3132.9,
+                       "attributes":  {
+
+                                      }
+                   }
+               ]
+}
+{
+    "schemaVersion":  "1.0",
+    "traceId":  "7051713bb5e748cfa5e9d1585dfc5929",
+    "sessionId":  "browser-d2e3b631-68ba-4cb0-982a-a743d02c1d6b",
+    "turnId":  "turn-3",
+    "startedAt":  1784747214.3524673,
+    "totalMs":  3406.3,
+    "timings":  {
+                    "stt":  521.0,
+                    "routing":  0.0,
+                    "llm":  900.8,
+                    "tts":  1980.8
+                },
+    "attributes":  {
+                       "language":  "en",
+                       "locale":  "en-US",
+                       "provider":  "openai",
+                       "model":  "gpt-4o-mini",
+                       "action":  null,
+                       "sources":  [
+
+                                   ]
+                   },
+    "events":  [
+                   {
+                       "name":  "audio.received",
+                       "offsetMs":  0.0,
+                       "attributes":  {
+                                          "bytes":  69170,
+                                          "contentType":  "audio/webm;codecs=opus"
+                                      }
+                   },
+                   {
+                       "name":  "stt.started",
+                       "offsetMs":  0.0,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini-transcribe"
+                                      }
+                   },
+                   {
+                       "name":  "stt.completed",
+                       "offsetMs":  521.0,
+                       "attributes":  {
+                                          "durationMs":  521.0
+                                      }
+                   },
+                   {
+                       "name":  "routing.started",
+                       "offsetMs":  521.1,
+                       "attributes":  {
+
+                                      }
+                   },
+                   {
+                       "name":  "routing.completed",
+                       "offsetMs":  521.1,
+                       "attributes":  {
+                                          "durationMs":  0.0
+                                      }
+                   },
+                   {
+                       "name":  "router.selected",
+                       "offsetMs":  521.1,
+                       "attributes":  {
+                                          "language":  "en",
+                                          "locale":  "en-US",
+                                          "changed":  false,
+                                          "reason":  "session"
+                                      }
+                   },
+                   {
+                       "name":  "caller.transcript",
+                       "offsetMs":  521.1,
+                       "attributes":  {
+                                          "text":  "The name is Alex and email is alex@example.com."
+                                      }
+                   },
+                   {
+                       "name":  "llm.started",
+                       "offsetMs":  522.9,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini"
+                                      }
+                   },
+                   {
+                       "name":  "llm.completed",
+                       "offsetMs":  1423.7,
+                       "attributes":  {
+                                          "durationMs":  900.8
+                                      }
+                   },
+                   {
+                       "name":  "assistant.response",
+                       "offsetMs":  1423.7,
+                       "attributes":  {
+                                          "text":  "Just to confirm, you\u0027re booking a Family Double Queen room from August 6th to August 8th for two guests, under the name Alex with the email alex@example.com. Is that correct?",
+                                          "action":  null
+                                      }
+                   },
+                   {
+                       "name":  "tts.started",
+                       "offsetMs":  1423.8,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini-tts",
+                                          "voice":  "alloy"
+                                      }
+                   },
+                   {
+                       "name":  "tts.completed",
+                       "offsetMs":  3404.6,
+                       "attributes":  {
+                                          "durationMs":  1980.8
+                                      }
+                   },
+                   {
+                       "name":  "turn.completed",
+                       "offsetMs":  3406.3,
+                       "attributes":  {
+
+                                      }
+                   }
+               ]
+}
+{
+    "schemaVersion":  "1.0",
+    "traceId":  "1004bf53e3e94c5488dd7b650a64b348",
+    "sessionId":  "browser-d2e3b631-68ba-4cb0-982a-a743d02c1d6b",
+    "turnId":  "turn-4",
+    "startedAt":  1784747227.3161845,
+    "totalMs":  5348.6,
+    "timings":  {
+                    "stt":  494.5,
+                    "routing":  0.0,
+                    "llm":  2151.9,
+                    "tools":  0.0,
+                    "tts":  2696.4
+                },
+    "attributes":  {
+                       "language":  "en",
+                       "locale":  "en-US",
+                       "provider":  "openai",
+                       "model":  "gpt-4o-mini",
+                       "action":  null,
+                       "sources":  [
+
+                                   ]
+                   },
+    "events":  [
+                   {
+                       "name":  "audio.received",
+                       "offsetMs":  0.0,
+                       "attributes":  {
+                                          "bytes":  54593,
+                                          "contentType":  "audio/webm;codecs=opus"
+                                      }
+                   },
+                   {
+                       "name":  "barge_in.turn_started",
+                       "offsetMs":  0.0,
+                       "attributes":  {
+
+                                      }
+                   },
+                   {
+                       "name":  "stt.started",
+                       "offsetMs":  0.0,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini-transcribe"
+                                      }
+                   },
+                   {
+                       "name":  "stt.completed",
+                       "offsetMs":  494.6,
+                       "attributes":  {
+                                          "durationMs":  494.5
+                                      }
+                   },
+                   {
+                       "name":  "routing.started",
+                       "offsetMs":  494.6,
+                       "attributes":  {
+
+                                      }
+                   },
+                   {
+                       "name":  "routing.completed",
+                       "offsetMs":  494.6,
+                       "attributes":  {
+                                          "durationMs":  0.0
+                                      }
+                   },
+                   {
+                       "name":  "router.selected",
+                       "offsetMs":  494.6,
+                       "attributes":  {
+                                          "language":  "en",
+                                          "locale":  "en-US",
+                                          "changed":  false,
+                                          "reason":  "session"
+                                      }
+                   },
+                   {
+                       "name":  "caller.transcript",
+                       "offsetMs":  494.6,
+                       "attributes":  {
+                                          "text":  "Yes, that looks correct. Can you send me a confirmation?"
+                                      }
+                   },
+                   {
+                       "name":  "llm.started",
+                       "offsetMs":  496.1,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini"
+                                      }
+                   },
+                   {
+                       "name":  "llm.completed",
+                       "offsetMs":  1515.6,
+                       "attributes":  {
+                                          "durationMs":  1019.5
+                                      }
+                   },
+                   {
+                       "name":  "tool.requested",
+                       "offsetMs":  1515.6,
+                       "attributes":  {
+                                          "tool":  "create_booking",
+                                          "arguments":  {
+                                                            "check_in":  "2024-08-06",
+                                                            "check_out":  "2024-08-08",
+                                                            "guests":  2,
+                                                            "room_type":  "Family Double Queen",
+                                                            "guest_name":  "[REDACTED]",
+                                                            "contact":  "[REDACTED]"
+                                                        }
+                                      }
+                   },
+                   {
+                       "name":  "tools.started",
+                       "offsetMs":  1515.6,
+                       "attributes":  {
+                                          "tool":  "create_booking"
+                                      }
+                   },
+                   {
+                       "name":  "tools.completed",
+                       "offsetMs":  1515.6,
+                       "attributes":  {
+                                          "durationMs":  0.0
+                                      }
+                   },
+                   {
+                       "name":  "tool.result",
+                       "offsetMs":  1515.6,
+                       "attributes":  {
+                                          "tool":  "create_booking",
+                                          "result":  "Booking confirmed. Confirmation AH-4827 for Alex in a Family Double Queen from 2024-08-06 to 2024-08-08 for 2 guest(s). Confirmation sent to alex@example.com.",
+                                          "sources":  [
+
+                                                      ],
+                                          "action":  null
+                                      }
+                   },
+                   {
+                       "name":  "llm.started",
+                       "offsetMs":  1515.7,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini"
+                                      }
+                   },
+                   {
+                       "name":  "llm.completed",
+                       "offsetMs":  2648.1,
+                       "attributes":  {
+                                          "durationMs":  1132.4
+                                      }
+                   },
+                   {
+                       "name":  "assistant.response",
+                       "offsetMs":  2648.1,
+                       "attributes":  {
+                                          "text":  "Your booking is confirmed! You have a Family Double Queen room from August 6th to August 8th for two guests, under the name Alex. Your confirmation number is AH-4827, and a confirmation has been sent to alex@example.com. Thank you!",
+                                          "action":  null
+                                      }
+                   },
+                   {
+                       "name":  "tts.started",
+                       "offsetMs":  2648.1,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini-tts",
+                                          "voice":  "alloy"
+                                      }
+                   },
+                   {
+                       "name":  "tts.completed",
+                       "offsetMs":  5344.6,
+                       "attributes":  {
+                                          "durationMs":  2696.4
+                                      }
+                   },
+                   {
+                       "name":  "turn.completed",
+                       "offsetMs":  5348.5,
+                       "attributes":  {
+
+                                      }
+                   }
+               ]
+}
+{
+    "schemaVersion":  "1.0",
+    "traceId":  "46d2c32c32e6466891eb55394bad335a",
+    "sessionId":  "browser-d2e3b631-68ba-4cb0-982a-a743d02c1d6b",
+    "turnId":  "turn-5",
+    "startedAt":  1784747242.3776562,
+    "totalMs":  3277.1,
+    "timings":  {
+                    "stt":  474.0,
+                    "routing":  0.0,
+                    "llm":  904.2,
+                    "tts":  1896.3
+                },
+    "attributes":  {
+                       "language":  "en",
+                       "locale":  "en-US",
+                       "provider":  "openai",
+                       "model":  "gpt-4o-mini",
+                       "action":  null,
+                       "sources":  [
+
+                                   ]
+                   },
+    "events":  [
+                   {
+                       "name":  "audio.received",
+                       "offsetMs":  0.0,
+                       "attributes":  {
+                                          "bytes":  47790,
+                                          "contentType":  "audio/webm;codecs=opus"
+                                      }
+                   },
+                   {
+                       "name":  "barge_in.turn_started",
+                       "offsetMs":  0.0,
+                       "attributes":  {
+
+                                      }
+                   },
+                   {
+                       "name":  "stt.started",
+                       "offsetMs":  0.0,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini-transcribe"
+                                      }
+                   },
+                   {
+                       "name":  "stt.completed",
+                       "offsetMs":  474.0,
+                       "attributes":  {
+                                          "durationMs":  474.0
+                                      }
+                   },
+                   {
+                       "name":  "routing.started",
+                       "offsetMs":  474.0,
+                       "attributes":  {
+
+                                      }
+                   },
+                   {
+                       "name":  "routing.completed",
+                       "offsetMs":  474.1,
+                       "attributes":  {
+                                          "durationMs":  0.0
+                                      }
+                   },
+                   {
+                       "name":  "router.selected",
+                       "offsetMs":  474.1,
+                       "attributes":  {
+                                          "language":  "en",
+                                          "locale":  "en-US",
+                                          "changed":  false,
+                                          "reason":  "session"
+                                      }
+                   },
+                   {
+                       "name":  "caller.transcript",
+                       "offsetMs":  474.1,
+                       "attributes":  {
+                                          "text":  "Can you tell me what is the weather today?"
+                                      }
+                   },
+                   {
+                       "name":  "llm.started",
+                       "offsetMs":  475.0,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini"
+                                      }
+                   },
+                   {
+                       "name":  "llm.completed",
+                       "offsetMs":  1379.2,
+                       "attributes":  {
+                                          "durationMs":  904.2
+                                      }
+                   },
+                   {
+                       "name":  "assistant.response",
+                       "offsetMs":  1379.3,
+                       "attributes":  {
+                                          "text":  "I\u0027m sorry, but I can only assist with hotel reservations. Would you like to book, change, or cancel a stay?",
+                                          "action":  null
+                                      }
+                   },
+                   {
+                       "name":  "tts.started",
+                       "offsetMs":  1379.3,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini-tts",
+                                          "voice":  "alloy"
+                                      }
+                   },
+                   {
+                       "name":  "tts.completed",
+                       "offsetMs":  3275.7,
+                       "attributes":  {
+                                          "durationMs":  1896.3
+                                      }
+                   },
+                   {
+                       "name":  "turn.completed",
+                       "offsetMs":  3277.1,
+                       "attributes":  {
+
+                                      }
+                   }
+               ]
+}
+{
+    "schemaVersion":  "1.0",
+    "traceId":  "b8dba3d8ef98422f838d18e9f72da283",
+    "sessionId":  "browser-d2e3b631-68ba-4cb0-982a-a743d02c1d6b",
+    "turnId":  "turn-6",
+    "startedAt":  1784747259.3299575,
+    "totalMs":  3697.4,
+    "timings":  {
+                    "stt":  819.8,
+                    "routing":  0.0,
+                    "llm":  935.9,
+                    "tts":  1938.5
+                },
+    "attributes":  {
+                       "language":  "en",
+                       "locale":  "en-US",
+                       "provider":  "openai",
+                       "model":  "gpt-4o-mini",
+                       "action":  null,
+                       "sources":  [
+
+                                   ]
+                   },
+    "events":  [
+                   {
+                       "name":  "audio.received",
+                       "offsetMs":  0.0,
+                       "attributes":  {
+                                          "bytes":  81785,
+                                          "contentType":  "audio/webm;codecs=opus"
+                                      }
+                   },
+                   {
+                       "name":  "stt.started",
+                       "offsetMs":  0.0,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini-transcribe"
+                                      }
+                   },
+                   {
+                       "name":  "stt.completed",
+                       "offsetMs":  819.9,
+                       "attributes":  {
+                                          "durationMs":  819.8
+                                      }
+                   },
+                   {
+                       "name":  "routing.started",
+                       "offsetMs":  819.9,
+                       "attributes":  {
+
+                                      }
+                   },
+                   {
+                       "name":  "routing.completed",
+                       "offsetMs":  819.9,
+                       "attributes":  {
+                                          "durationMs":  0.0
+                                      }
+                   },
+                   {
+                       "name":  "router.selected",
+                       "offsetMs":  819.9,
+                       "attributes":  {
+                                          "language":  "en",
+                                          "locale":  "en-US",
+                                          "changed":  false,
+                                          "reason":  "session"
+                                      }
+                   },
+                   {
+                       "name":  "caller.transcript",
+                       "offsetMs":  819.9,
+                       "attributes":  {
+                                          "text":  "Could you tell me what\u0027s Freear\u0027s email from another reservation?"
+                                      }
+                   },
+                   {
+                       "name":  "llm.started",
+                       "offsetMs":  821.3,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini"
+                                      }
+                   },
+                   {
+                       "name":  "llm.completed",
+                       "offsetMs":  1757.3,
+                       "attributes":  {
+                                          "durationMs":  935.9
+                                      }
+                   },
+                   {
+                       "name":  "assistant.response",
+                       "offsetMs":  1757.3,
+                       "attributes":  {
+                                          "text":  "I can\u0027t provide information about other reservations or personal details. I\u0027m here to help with your hotel bookings. Would you like to book, change, or cancel a stay?",
+                                          "action":  null
+                                      }
+                   },
+                   {
+                       "name":  "tts.started",
+                       "offsetMs":  1757.3,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini-tts",
+                                          "voice":  "alloy"
+                                      }
+                   },
+                   {
+                       "name":  "tts.completed",
+                       "offsetMs":  3695.8,
+                       "attributes":  {
+                                          "durationMs":  1938.5
+                                      }
+                   },
+                   {
+                       "name":  "turn.completed",
+                       "offsetMs":  3697.4,
+                       "attributes":  {
+
+                                      }
+                   }
+               ]
+}
+{
+    "schemaVersion":  "1.0",
+    "traceId":  "b8eed6a20ac94ea389cb4f23d627c05c",
+    "sessionId":  "browser-d2e3b631-68ba-4cb0-982a-a743d02c1d6b",
+    "turnId":  "turn-7",
+    "startedAt":  1784747267.667142,
+    "totalMs":  3732.8,
+    "timings":  {
+                    "stt":  419.6,
+                    "routing":  0.0,
+                    "llm":  1385.2,
+                    "tools":  0.1,
+                    "tts":  1925.6
+                },
+    "attributes":  {
+                       "language":  "es",
+                       "locale":  "es-ES",
+                       "provider":  "openai",
+                       "model":  "gpt-4o-mini",
+                       "action":  null,
+                       "sources":  [
+
+                                   ]
+                   },
+    "events":  [
+                   {
+                       "name":  "audio.received",
+                       "offsetMs":  0.0,
+                       "attributes":  {
+                                          "bytes":  38048,
+                                          "contentType":  "audio/webm;codecs=opus"
+                                      }
+                   },
+                   {
+                       "name":  "barge_in.turn_started",
+                       "offsetMs":  0.0,
+                       "attributes":  {
+
+                                      }
+                   },
+                   {
+                       "name":  "stt.started",
+                       "offsetMs":  0.0,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini-transcribe"
+                                      }
+                   },
+                   {
+                       "name":  "stt.completed",
+                       "offsetMs":  419.6,
+                       "attributes":  {
+                                          "durationMs":  419.6
+                                      }
+                   },
+                   {
+                       "name":  "routing.started",
+                       "offsetMs":  419.7,
+                       "attributes":  {
+
+                                      }
+                   },
+                   {
+                       "name":  "routing.completed",
+                       "offsetMs":  419.7,
+                       "attributes":  {
+                                          "durationMs":  0.0
+                                      }
+                   },
+                   {
+                       "name":  "router.selected",
+                       "offsetMs":  419.7,
+                       "attributes":  {
+                                          "language":  "en",
+                                          "locale":  "en-US",
+                                          "changed":  false,
+                                          "reason":  "session"
+                                      }
+                   },
+                   {
+                       "name":  "caller.transcript",
+                       "offsetMs":  419.7,
+                       "attributes":  {
+                                          "text":  "Can you speak in Spanish?"
+                                      }
+                   },
+                   {
+                       "name":  "llm.started",
+                       "offsetMs":  420.9,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini"
+                                      }
+                   },
+                   {
+                       "name":  "llm.completed",
+                       "offsetMs":  1116.7,
+                       "attributes":  {
+                                          "durationMs":  695.8
+                                      }
+                   },
+                   {
+                       "name":  "tool.requested",
+                       "offsetMs":  1116.8,
+                       "attributes":  {
+                                          "tool":  "set_language",
+                                          "arguments":  {
+                                                            "language":  "es"
+                                                        }
+                                      }
+                   },
+                   {
+                       "name":  "tools.started",
+                       "offsetMs":  1116.8,
+                       "attributes":  {
+                                          "tool":  "set_language"
+                                      }
+                   },
+                   {
+                       "name":  "router.language_changed",
+                       "offsetMs":  1116.8,
+                       "attributes":  {
+                                          "language":  "es",
+                                          "locale":  "es-ES",
+                                          "changed":  true,
+                                          "reason":  "set_language_tool"
+                                      }
+                   },
+                   {
+                       "name":  "tools.completed",
+                       "offsetMs":  1116.8,
+                       "attributes":  {
+                                          "durationMs":  0.1
+                                      }
+                   },
+                   {
+                       "name":  "tool.result",
+                       "offsetMs":  1116.8,
+                       "attributes":  {
+                                          "tool":  "set_language",
+                                          "result":  "Response language set to Spanish.",
+                                          "sources":  [
+
+                                                      ],
+                                          "action":  null
+                                      }
+                   },
+                   {
+                       "name":  "llm.started",
+                       "offsetMs":  1116.9,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini"
+                                      }
+                   },
+                   {
+                       "name":  "llm.completed",
+                       "offsetMs":  1806.2,
+                       "attributes":  {
+                                          "durationMs":  689.4
+                                      }
+                   },
+                   {
+                       "name":  "assistant.response",
+                       "offsetMs":  1806.2,
+                       "attributes":  {
+                                          "text":  "Claro, puedo hablar en español. ¿En qué puedo ayudarte con tu reserva de hotel?",
+                                          "action":  null
+                                      }
+                   },
+                   {
+                       "name":  "tts.started",
+                       "offsetMs":  1806.2,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini-tts",
+                                          "voice":  "alloy"
+                                      }
+                   },
+                   {
+                       "name":  "tts.completed",
+                       "offsetMs":  3731.8,
+                       "attributes":  {
+                                          "durationMs":  1925.6
+                                      }
+                   },
+                   {
+                       "name":  "turn.completed",
+                       "offsetMs":  3732.8,
+                       "attributes":  {
+
+                                      }
+                   }
+               ]
+}
+{
+    "schemaVersion":  "1.0",
+    "traceId":  "e4948d093d174df08dd63da569dd50d8",
+    "sessionId":  "browser-d2e3b631-68ba-4cb0-982a-a743d02c1d6b",
+    "turnId":  "turn-8",
+    "startedAt":  1784747279.6766531,
+    "totalMs":  5908.5,
+    "timings":  {
+                    "stt":  901.1,
+                    "routing":  0.0,
+                    "llm":  1626.7,
+                    "tools":  0.1,
+                    "tts":  3378.3
+                },
+    "attributes":  {
+                       "language":  "en",
+                       "locale":  "en-US",
+                       "provider":  "openai",
+                       "model":  "gpt-4o-mini",
+                       "action":  null,
+                       "sources":  [
+
+                                   ]
+                   },
+    "events":  [
+                   {
+                       "name":  "audio.received",
+                       "offsetMs":  0.0,
+                       "attributes":  {
+                                          "bytes":  40963,
+                                          "contentType":  "audio/webm;codecs=opus"
+                                      }
+                   },
+                   {
+                       "name":  "stt.started",
+                       "offsetMs":  0.1,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini-transcribe"
+                                      }
+                   },
+                   {
+                       "name":  "stt.completed",
+                       "offsetMs":  901.2,
+                       "attributes":  {
+                                          "durationMs":  901.1
+                                      }
+                   },
+                   {
+                       "name":  "routing.started",
+                       "offsetMs":  901.2,
+                       "attributes":  {
+
+                                      }
+                   },
+                   {
+                       "name":  "routing.completed",
+                       "offsetMs":  901.3,
+                       "attributes":  {
+                                          "durationMs":  0.0
+                                      }
+                   },
+                   {
+                       "name":  "router.selected",
+                       "offsetMs":  901.3,
+                       "attributes":  {
+                                          "language":  "es",
+                                          "locale":  "es-ES",
+                                          "changed":  false,
+                                          "reason":  "session"
+                                      }
+                   },
+                   {
+                       "name":  "caller.transcript",
+                       "offsetMs":  901.3,
+                       "attributes":  {
+                                          "text":  "Please switch back to English."
+                                      }
+                   },
+                   {
+                       "name":  "llm.started",
+                       "offsetMs":  902.4,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini"
+                                      }
+                   },
+                   {
+                       "name":  "llm.completed",
+                       "offsetMs":  1569.5,
+                       "attributes":  {
+                                          "durationMs":  667.1
+                                      }
+                   },
+                   {
+                       "name":  "tool.requested",
+                       "offsetMs":  1569.6,
+                       "attributes":  {
+                                          "tool":  "set_language",
+                                          "arguments":  {
+                                                            "language":  "en"
+                                                        }
+                                      }
+                   },
+                   {
+                       "name":  "tools.started",
+                       "offsetMs":  1569.6,
+                       "attributes":  {
+                                          "tool":  "set_language"
+                                      }
+                   },
+                   {
+                       "name":  "router.language_changed",
+                       "offsetMs":  1569.7,
+                       "attributes":  {
+                                          "language":  "en",
+                                          "locale":  "en-US",
+                                          "changed":  true,
+                                          "reason":  "set_language_tool"
+                                      }
+                   },
+                   {
+                       "name":  "tools.completed",
+                       "offsetMs":  1569.7,
+                       "attributes":  {
+                                          "durationMs":  0.1
+                                      }
+                   },
+                   {
+                       "name":  "tool.result",
+                       "offsetMs":  1569.7,
+                       "attributes":  {
+                                          "tool":  "set_language",
+                                          "result":  "Response language set to English.",
+                                          "sources":  [
+
+                                                      ],
+                                          "action":  null
+                                      }
+                   },
+                   {
+                       "name":  "llm.started",
+                       "offsetMs":  1569.8,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini"
+                                      }
+                   },
+                   {
+                       "name":  "llm.completed",
+                       "offsetMs":  2529.4,
+                       "attributes":  {
+                                          "durationMs":  959.6
+                                      }
+                   },
+                   {
+                       "name":  "assistant.response",
+                       "offsetMs":  2529.4,
+                       "attributes":  {
+                                          "text":  "I\u0027m back to English now. How can I assist you with your hotel reservation?",
+                                          "action":  null
+                                      }
+                   },
+                   {
+                       "name":  "tts.started",
+                       "offsetMs":  2529.4,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini-tts",
+                                          "voice":  "alloy"
+                                      }
+                   },
+                   {
+                       "name":  "tts.completed",
+                       "offsetMs":  5907.7,
+                       "attributes":  {
+                                          "durationMs":  3378.3
+                                      }
+                   },
+                   {
+                       "name":  "turn.completed",
+                       "offsetMs":  5908.5,
+                       "attributes":  {
+
+                                      }
+                   }
+               ]
+}
+{
+    "schemaVersion":  "1.0",
+    "traceId":  "90c535a9dbe54f05bd5654330efbc3b8",
+    "sessionId":  "browser-d2e3b631-68ba-4cb0-982a-a743d02c1d6b",
+    "turnId":  "turn-9",
+    "startedAt":  1784747295.078402,
+    "totalMs":  5124.8,
+    "timings":  {
+                    "stt":  570.5,
+                    "routing":  0.0,
+                    "llm":  1857.1,
+                    "retrieval":  0.8,
+                    "tools":  0.8,
+                    "tts":  2692.8
+                },
+    "attributes":  {
+                       "language":  "en",
+                       "locale":  "en-US",
+                       "provider":  "openai",
+                       "model":  "gpt-4o-mini",
+                       "action":  null,
+                       "sources":  [
+                                       "hotel_policies.md#Cancellation"
+                                   ]
+                   },
+    "events":  [
+                   {
+                       "name":  "audio.received",
+                       "offsetMs":  0.0,
+                       "attributes":  {
+                                          "bytes":  49712,
+                                          "contentType":  "audio/webm;codecs=opus"
+                                      }
+                   },
+                   {
+                       "name":  "stt.started",
+                       "offsetMs":  0.0,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini-transcribe"
+                                      }
+                   },
+                   {
+                       "name":  "stt.completed",
+                       "offsetMs":  570.5,
+                       "attributes":  {
+                                          "durationMs":  570.5
+                                      }
+                   },
+                   {
+                       "name":  "routing.started",
+                       "offsetMs":  570.6,
+                       "attributes":  {
+
+                                      }
+                   },
+                   {
+                       "name":  "routing.completed",
+                       "offsetMs":  570.6,
+                       "attributes":  {
+                                          "durationMs":  0.0
+                                      }
+                   },
+                   {
+                       "name":  "router.selected",
+                       "offsetMs":  570.6,
+                       "attributes":  {
+                                          "language":  "en",
+                                          "locale":  "en-US",
+                                          "changed":  false,
+                                          "reason":  "session"
+                                      }
+                   },
+                   {
+                       "name":  "caller.transcript",
+                       "offsetMs":  570.6,
+                       "attributes":  {
+                                          "text":  "Can you tell me the cancellation policy?"
+                                      }
+                   },
+                   {
+                       "name":  "tool.route_selected",
+                       "offsetMs":  570.6,
+                       "attributes":  {
+                                          "tool":  "search_hotel_knowledge",
+                                          "reason":  "hotel_knowledge_intent"
+                                      }
+                   },
+                   {
+                       "name":  "llm.started",
+                       "offsetMs":  570.6,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini"
+                                      }
+                   },
+                   {
+                       "name":  "llm.completed",
+                       "offsetMs":  1154.6,
+                       "attributes":  {
+                                          "durationMs":  584.0
+                                      }
+                   },
+                   {
+                       "name":  "tool.requested",
+                       "offsetMs":  1154.6,
+                       "attributes":  {
+                                          "tool":  "search_hotel_knowledge",
+                                          "arguments":  {
+                                                            "query":  "cancellation policy"
+                                                        }
+                                      }
+                   },
+                   {
+                       "name":  "tools.started",
+                       "offsetMs":  1154.7,
+                       "attributes":  {
+                                          "tool":  "search_hotel_knowledge"
+                                      }
+                   },
+                   {
+                       "name":  "retrieval.started",
+                       "offsetMs":  1154.7,
+                       "attributes":  {
+                                          "query":  "cancellation policy"
+                                      }
+                   },
+                   {
+                       "name":  "retrieval.completed",
+                       "offsetMs":  1155.5,
+                       "attributes":  {
+                                          "durationMs":  0.8
+                                      }
+                   },
+                   {
+                       "name":  "tools.completed",
+                       "offsetMs":  1155.5,
+                       "attributes":  {
+                                          "durationMs":  0.8
+                                      }
+                   },
+                   {
+                       "name":  "tool.result",
+                       "offsetMs":  1155.5,
+                       "attributes":  {
+                                          "tool":  "search_hotel_knowledge",
+                                          "result":  "Grounded hotel knowledge:\n[Cancellation] Reservations may be cancelled without charge until 6:00 PM local hotel time two days before arrival. Later cancellations are charged one night plus applicable tax. Prepaid promotional rates are non-refundable.",
+                                          "sources":  [
+                                                          "hotel_policies.md#Cancellation"
+                                                      ],
+                                          "action":  null
+                                      }
+                   },
+                   {
+                       "name":  "llm.started",
+                       "offsetMs":  1155.5,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini"
+                                      }
+                   },
+                   {
+                       "name":  "llm.completed",
+                       "offsetMs":  2428.6,
+                       "attributes":  {
+                                          "durationMs":  1273.1
+                                      }
+                   },
+                   {
+                       "name":  "assistant.response",
+                       "offsetMs":  2428.7,
+                       "attributes":  {
+                                          "text":  "You can cancel your reservation without charge until 6:00 PM local hotel time two days before your arrival. Cancellations made later will incur a charge of one night plus applicable tax. Prepaid promotional rates are non-refundable. Would you like to book, change, or cancel a stay?",
+                                          "action":  null
+                                      }
+                   },
+                   {
+                       "name":  "tts.started",
+                       "offsetMs":  2428.7,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini-tts",
+                                          "voice":  "alloy"
+                                      }
+                   },
+                   {
+                       "name":  "tts.completed",
+                       "offsetMs":  5121.5,
+                       "attributes":  {
+                                          "durationMs":  2692.8
+                                      }
+                   },
+                   {
+                       "name":  "turn.completed",
+                       "offsetMs":  5124.8,
+                       "attributes":  {
+
+                                      }
+                   }
+               ]
+}
+{
+    "schemaVersion":  "1.0",
+    "traceId":  "6d1175fdb2da4f76b1fbad95243bbab2",
+    "sessionId":  "browser-d2e3b631-68ba-4cb0-982a-a743d02c1d6b",
+    "turnId":  "turn-10",
+    "startedAt":  1784747320.4051297,
+    "totalMs":  3037.0,
+    "timings":  {
+                    "stt":  437.4,
+                    "routing":  0.0,
+                    "llm":  1003.0,
+                    "tts":  1595.0
+                },
+    "attributes":  {
+                       "language":  "en",
+                       "locale":  "en-US",
+                       "provider":  "openai",
+                       "model":  "gpt-4o-mini",
+                       "action":  null,
+                       "sources":  [
+
+                                   ]
+                   },
+    "events":  [
+                   {
+                       "name":  "audio.received",
+                       "offsetMs":  0.0,
+                       "attributes":  {
+                                          "bytes":  20554,
+                                          "contentType":  "audio/webm;codecs=opus"
+                                      }
+                   },
+                   {
+                       "name":  "stt.started",
+                       "offsetMs":  0.0,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini-transcribe"
+                                      }
+                   },
+                   {
+                       "name":  "stt.completed",
+                       "offsetMs":  437.5,
+                       "attributes":  {
+                                          "durationMs":  437.4
+                                      }
+                   },
+                   {
+                       "name":  "routing.started",
+                       "offsetMs":  437.5,
+                       "attributes":  {
+
+                                      }
+                   },
+                   {
+                       "name":  "routing.completed",
+                       "offsetMs":  437.6,
+                       "attributes":  {
+                                          "durationMs":  0.0
+                                      }
+                   },
+                   {
+                       "name":  "router.selected",
+                       "offsetMs":  437.6,
+                       "attributes":  {
+                                          "language":  "en",
+                                          "locale":  "en-US",
+                                          "changed":  false,
+                                          "reason":  "session"
+                                      }
+                   },
+                   {
+                       "name":  "caller.transcript",
+                       "offsetMs":  437.6,
+                       "attributes":  {
+                                          "text":  "Gracias."
+                                      }
+                   },
+                   {
+                       "name":  "llm.started",
+                       "offsetMs":  438.3,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini"
+                                      }
+                   },
+                   {
+                       "name":  "llm.completed",
+                       "offsetMs":  1441.3,
+                       "attributes":  {
+                                          "durationMs":  1003.0
+                                      }
+                   },
+                   {
+                       "name":  "assistant.response",
+                       "offsetMs":  1441.3,
+                       "attributes":  {
+                                          "text":  "You\u0027re welcome! If you need help with a reservation, just let me know.",
+                                          "action":  null
+                                      }
+                   },
+                   {
+                       "name":  "tts.started",
+                       "offsetMs":  1441.4,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini-tts",
+                                          "voice":  "alloy"
+                                      }
+                   },
+                   {
+                       "name":  "tts.completed",
+                       "offsetMs":  3036.4,
+                       "attributes":  {
+                                          "durationMs":  1595.0
+                                      }
+                   },
+                   {
+                       "name":  "turn.completed",
+                       "offsetMs":  3037.0,
+                       "attributes":  {
+
+                                      }
+                   }
+               ]
+}
+{
+    "schemaVersion":  "1.0",
+    "traceId":  "c1b91949fc8840bd8b61b34833d285d3",
+    "sessionId":  "browser-d2e3b631-68ba-4cb0-982a-a743d02c1d6b",
+    "turnId":  "turn-11",
+    "startedAt":  1784747329.4072123,
+    "totalMs":  2547.1,
+    "timings":  {
+                    "stt":  376.0,
+                    "routing":  0.0,
+                    "llm":  1356.5,
+                    "tools":  0.0,
+                    "tts":  813.5
+                },
+    "attributes":  {
+                       "language":  "en",
+                       "locale":  "en-US",
+                       "provider":  "openai",
+                       "model":  "gpt-4o-mini",
+                       "action":  "hangup",
+                       "sources":  [
+
+                                   ]
+                   },
+    "events":  [
+                   {
+                       "name":  "audio.received",
+                       "offsetMs":  0.0,
+                       "attributes":  {
+                                          "bytes":  16694,
+                                          "contentType":  "audio/webm;codecs=opus"
+                                      }
+                   },
+                   {
+                       "name":  "stt.started",
+                       "offsetMs":  0.0,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini-transcribe"
+                                      }
+                   },
+                   {
+                       "name":  "stt.completed",
+                       "offsetMs":  376.0,
+                       "attributes":  {
+                                          "durationMs":  376.0
+                                      }
+                   },
+                   {
+                       "name":  "routing.started",
+                       "offsetMs":  376.1,
+                       "attributes":  {
+
+                                      }
+                   },
+                   {
+                       "name":  "routing.completed",
+                       "offsetMs":  376.1,
+                       "attributes":  {
+                                          "durationMs":  0.0
+                                      }
+                   },
+                   {
+                       "name":  "router.selected",
+                       "offsetMs":  376.1,
+                       "attributes":  {
+                                          "language":  "en",
+                                          "locale":  "en-US",
+                                          "changed":  false,
+                                          "reason":  "session"
+                                      }
+                   },
+                   {
+                       "name":  "caller.transcript",
+                       "offsetMs":  376.1,
+                       "attributes":  {
+                                          "text":  "Goodbye."
+                                      }
+                   },
+                   {
+                       "name":  "llm.started",
+                       "offsetMs":  376.4,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini"
+                                      }
+                   },
+                   {
+                       "name":  "llm.completed",
+                       "offsetMs":  1086.6,
+                       "attributes":  {
+                                          "durationMs":  710.2
+                                      }
+                   },
+                   {
+                       "name":  "tool.requested",
+                       "offsetMs":  1086.6,
+                       "attributes":  {
+                                          "tool":  "end_call",
+                                          "arguments":  {
+
+                                                        }
+                                      }
+                   },
+                   {
+                       "name":  "tools.started",
+                       "offsetMs":  1086.6,
+                       "attributes":  {
+                                          "tool":  "end_call"
+                                      }
+                   },
+                   {
+                       "name":  "tools.completed",
+                       "offsetMs":  1086.6,
+                       "attributes":  {
+                                          "durationMs":  0.0
+                                      }
+                   },
+                   {
+                       "name":  "tool.result",
+                       "offsetMs":  1086.6,
+                       "attributes":  {
+                                          "tool":  "end_call",
+                                          "result":  "Ending the call.",
+                                          "sources":  [
+
+                                                      ],
+                                          "action":  "hangup"
+                                      }
+                   },
+                   {
+                       "name":  "llm.started",
+                       "offsetMs":  1086.7,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini"
+                                      }
+                   },
+                   {
+                       "name":  "llm.completed",
+                       "offsetMs":  1733.0,
+                       "attributes":  {
+                                          "durationMs":  646.3
+                                      }
+                   },
+                   {
+                       "name":  "assistant.response",
+                       "offsetMs":  1733.0,
+                       "attributes":  {
+                                          "text":  "Goodbye! Have a great day!",
+                                          "action":  "hangup"
+                                      }
+                   },
+                   {
+                       "name":  "tts.started",
+                       "offsetMs":  1733.0,
+                       "attributes":  {
+                                          "model":  "gpt-4o-mini-tts",
+                                          "voice":  "alloy"
+                                      }
+                   },
+                   {
+                       "name":  "tts.completed",
+                       "offsetMs":  2546.6,
+                       "attributes":  {
+                                          "durationMs":  813.5
+                                      }
+                   },
+                   {
+                       "name":  "turn.completed",
+                       "offsetMs":  2547.1,
+                       "attributes":  {
+
+                                      }
+                   }
+               ]
+}
+
